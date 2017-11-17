@@ -1,5 +1,6 @@
 package script;
 
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import generic.BaseTest;
@@ -17,6 +18,7 @@ public void testLogin()
 	String pw=Lib.getExcelValue(EXCEL_PATH,"validLogin",1,1);
 	page.setPassword(pw);
 	page.clicklogin();
+	
 	try {
 		Thread.sleep(2000);
 	} catch (Exception e) {
