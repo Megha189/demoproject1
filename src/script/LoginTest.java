@@ -26,6 +26,7 @@ public void testLogin()
 		e.printStackTrace();
 	}
 	EnterTimeTrackPage track = new EnterTimeTrackPage(driver);
+	Reporter.log("About to open enter time track",true);
 	track.clickTask(driver);
 	track.clickTimeTrack(driver);
 	track.selectdropdwntimetrack(driver);
